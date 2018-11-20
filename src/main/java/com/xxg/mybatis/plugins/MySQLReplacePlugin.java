@@ -60,6 +60,8 @@ public class MySQLReplacePlugin extends PluginAdapter {
         XmlElement replace = new XmlElement("update");
         replace.addAttribute(new Attribute("id", "replace"));
 
+        context.getCommentGenerator().addComment(replace);
+
         StringBuilder replaceClause = new StringBuilder();
         StringBuilder valuesClause = new StringBuilder();
 
@@ -94,6 +96,8 @@ public class MySQLReplacePlugin extends PluginAdapter {
         // <update id="replaceSelective">...</update>
         XmlElement replace = new XmlElement("update");
         replace.addAttribute(new Attribute("id", "replaceSelective"));
+
+        context.getCommentGenerator().addComment(replace);
 
         replace.addElement(new TextElement("replace into "
                 + introspectedTable.getFullyQualifiedTableNameAtRuntime()));
