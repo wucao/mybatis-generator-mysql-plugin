@@ -26,7 +26,7 @@ pom.xml
 				<dependency>
 					<groupId>com.xxg</groupId>
 					<artifactId>mbg-mysql-plugin</artifactId>
-					<version>1.0.0</version>
+					<version>1.0.1</version>
 				</dependency>
 			</dependencies>
 			<configuration>
