@@ -12,28 +12,28 @@ pom.xml
 
 ```
 <build>
-	<plugins>
-		<plugin>
-			<groupId>org.mybatis.generator</groupId>
-			<artifactId>mybatis-generator-maven-plugin</artifactId>
-			<version>1.3.2</version>
-			<dependencies>
-				<dependency>
-					<groupId>mysql</groupId>
-					<artifactId>mysql-connector-java</artifactId>
-					<version>5.1.34</version>
-				</dependency>
-				<dependency>
-					<groupId>com.xxg</groupId>
-					<artifactId>mbg-mysql-plugin</artifactId>
-					<version>1.0.1</version>
-				</dependency>
-			</dependencies>
-			<configuration>
-				<overwrite>true</overwrite>
-			</configuration>
-		</plugin>
-	</plugins>
+    <plugins>
+        <plugin>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-maven-plugin</artifactId>
+            <version>1.3.2</version>
+            <dependencies>
+                <dependency>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <version>5.1.34</version>
+                </dependency>
+                <dependency>
+                    <groupId>com.xxg</groupId>
+                    <artifactId>mbg-mysql-plugin</artifactId>
+                    <version>1.0.1</version>
+                </dependency>
+            </dependencies>
+            <configuration>
+                <overwrite>true</overwrite>
+            </configuration>
+        </plugin>
+    </plugins>
 </build>
 ```
 
